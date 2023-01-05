@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 
-# main.py
-
 import sys
 from calculator_1 import add, subtract, multiply, divide
 
