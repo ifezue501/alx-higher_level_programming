@@ -61,6 +61,6 @@ void print_python_bytes(PyObject *p)
 		if (i == (size - 1))
 			printf("\n");
 		else
-			printf(" ")
+			printf(" ");
 	}
 }
