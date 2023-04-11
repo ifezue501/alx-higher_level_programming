@@ -1,18 +1,21 @@
 #!/usr/bin/node
-// Get the first argument passed on the command line
-const numb = process.argv[2];
-
-// Define the recursive function to calculate the factorial
-function factorial (numb) {
-  // Check if the argument is less than or equal to 1, or not a number
-  if (numb <= 1 || isNaN(numb)) {
-    // If it is, return 1 as the factorial of 0 or 1 is 1
-    return 1;
+// Define the factorial function
+function factorial(number) {
+  // Base case: if the input is 0, return 1
+  if (number === 0) {
+    return (1);
   } else {
-    // If it is not, return the number multiplied by the factorial of (number - 1)
-    return numb * factorial(numb - 1);
+    // Recursive case: call the factorial function with number - 1 and multiply by the current number
+    return (factorial(number - 1) * number);
   }
 }
-
-// Call the factorial function and print the result to the console
-console.log(factorial(numb)); 
+// Get the input number from the command line arguments
+const number = parseInt(process.argv[2]);
+// Check if the input number is valid and call the factorial function with it
+if (number) {
+  const result = factorial(number);
+  console.log(result);
+} else {
+  // If the input number is invalid, default to 1
+  console.log(1);
+}  
