@@ -1,5 +1,6 @@
 #!/usr/bin/node
-// Define a function named "add" that takes two arguments and returns their sum
-exports.add = function add(a, b) {
+// Export a function named 'add'
+exports.add = function add (a, b) {
+  // Add the two arguments and return the result
   return a + b;
 };
