@@ -1,5 +1,3 @@
 #!/usr/bin/node
-// Declare a string variable
-const myVar = 'JavaScript is amazing';
-// Log the string to the console
-console.log(myVar); 
+const myVar = 'JavaScript is amazing'; // Declare a string variable
+console.log(myVar); // Log the string to the console
