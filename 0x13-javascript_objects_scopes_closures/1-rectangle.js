@@ -5,5 +5,4 @@ module.exports = class Rectangle {    // This line exports a class called Rectan
         this.width = w;    // This line sets the 'width' property of the Rectangle instance to the value of 'w'
         this.height = h;   // This line sets the 'height' property of the Rectangle instance to the value of 'h'
     }
-
 };
